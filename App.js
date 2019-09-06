@@ -1,8 +1,10 @@
 import React from 'react';
 import { Animated, Dimensions } from 'react-native';
-import {createStackNavigator, createDrawerNavigator, createAppContainer} from 'react-navigation';
+import {createAppContainer} from 'react-navigation';
+import {createStackNavigator} from 'react-navigation-stack';
+import {createDrawerNavigator} from 'react-navigation-drawer';
 
-import InitialC from 'Pokedex/Screens/Initial/InitialC'
+import InitialC from 'PokedexFrontEnd/Screens/Initial/InitialC'
 // import SignUpCred from './Screens/SignUpCredentials'
 // import SignUpInfo from './Screens/SignUpInfo'
 // import Brewery from './Screens/Brewery'
