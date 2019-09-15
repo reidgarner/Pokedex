@@ -1,4 +1,4 @@
-package com.pokedexfrontend;
+package com.PokedexFrontEnd;
 
 import com.facebook.react.ReactActivity;
 

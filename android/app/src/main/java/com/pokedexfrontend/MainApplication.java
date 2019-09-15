@@ -1,4 +1,4 @@
-package com.pokedexfrontend;
+package com.PokedexFrontEnd;
 
 import android.app.Application;
 import android.util.Log;

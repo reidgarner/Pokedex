@@ -1,26 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  // StatusBar,
-  StyleSheet,
-  View,
-  Text,
-  // ScrollView,
-} from 'react-native';
+import { styles } from 'PokedexFrontEnd/Screens/Initial/InitialS'
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    // backgroundColor: '#1C1714',
-  },
-});
+import Button from 'PokedexFrontEnd/Components/Button'
+
+import {
+  View,
+  ImageBackground,
+} from 'react-native';
 
 export default function InitialV(props) {
   const { } = props;
+  const {
+    container,
+    buttonBox,
+    button,
+  } = styles
   return (
-    <View style={styles.container}>
-      <Text>PANTS</Text>
-    </View>
+    <ImageBackground
+      style={container}
+      source={require('PokedexFrontEnd/assets/pokedex_background.png')}
+    >
+      <View style={buttonBox}>
+        <Button label="Enter" />
+      </View>
+    </ImageBackground>
   );
 }
 
