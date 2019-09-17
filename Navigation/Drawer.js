@@ -16,21 +16,20 @@ const styles = StyleSheet.create({
   linkContainer: {
     position: 'absolute',
     width: '100%',
-    top: '17%',
-    left: '44%',
+    top: '13.5%',
+    left: '37%',
   },
   screenLinks: {
     width: '100%',
-    height: 60,
-    // backgroundColor: 'green',
-    // justifyContent: 'center',
-    // alignItems: 'center',
+    height: 80,
+    justifyContent: 'center',
   },
   linkText: {
     fontFamily: 'PokemonGB',
     fontSize: 16,
     lineHeight: 25,
-    // textAlign: 'center',
+    position: 'absolute',
+    left: '5%',
   },
 })
 

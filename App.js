@@ -12,7 +12,7 @@ import HomeC from 'PokedexFrontEnd/Screens/Home/HomeC'
 // import Store from './Screens/Store'
 // import Account from './Screens/Account'
 import Drawer from './Navigation/Drawer'
-// import MenuButton from './Components/MenuButton';
+import NavLogo from './Navigation/NavLogo';
 
 
 const StackNavigator = createStackNavigator(
@@ -34,6 +34,25 @@ const StackNavigator = createStackNavigator(
   //     }
   //   },
   // },
+  {
+    defaultNavigationOptions: ({ navigation }) => ({
+      headerRight: (
+        <NavLogo navigation={navigation} />
+      ),
+      headerStyle: {
+        backgroundColor: 'white',
+        borderBottomWidth: 0,
+      },
+      headerTintColor: '#2E6DB4',
+      cardStack: { gesturesEnabled: false },
+    }),
+    // transitionConfig: () => ({
+    //   transitionSpec: {
+    //     duration: 0,
+    //     timing: Animated.timing,
+    //   },
+    // }),
+  },
 );
 
 // const LoginStackNavigator = createStackNavigator(

@@ -5,7 +5,7 @@ import HomeV from 'PokedexFrontEnd/Screens/Home/HomeV';
 
 export default class HomeC extends Component {
   static navigationOptions = {
-    header: null,
+    // header: null,
     headerBackTitle: null,
   };
 
