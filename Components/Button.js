@@ -29,10 +29,14 @@ const styles = StyleSheet.create({
 export default function Button(props) {
   const {
     label,
+    onPress,
   } = props;
 
   return (
-    <TouchableOpacity style={styles.button}>
+    <TouchableOpacity
+      style={styles.button}
+      onPress={() => onPress()}
+    >
       <Text style={styles.label}>{label}</Text>
     </TouchableOpacity>
   );

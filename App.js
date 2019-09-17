@@ -5,18 +5,20 @@ import {createStackNavigator} from 'react-navigation-stack';
 import {createDrawerNavigator} from 'react-navigation-drawer';
 
 import InitialC from 'PokedexFrontEnd/Screens/Initial/InitialC'
+import HomeC from 'PokedexFrontEnd/Screens/Home/HomeC'
 // import SignUpCred from './Screens/SignUpCredentials'
 // import SignUpInfo from './Screens/SignUpInfo'
 // import Brewery from './Screens/Brewery'
 // import Store from './Screens/Store'
 // import Account from './Screens/Account'
-// import MenuDrawer from './Navigation/MenuDrawer'
+import Drawer from './Navigation/Drawer'
 // import MenuButton from './Components/MenuButton';
 
 
 const StackNavigator = createStackNavigator(
   {
     InitialC: {screen: InitialC},
+    HomeC: {screen: HomeC},
     // SignUpCred: {screen: SignUpCred},
     // SignUpInfo: {screen: SignUpInfo},
     // Brewery: {screen: Brewery},
@@ -79,12 +81,14 @@ const StackNavigator = createStackNavigator(
 // );
 
 const WIDTH = Dimensions.get('window').width;
+const HEIGHT = Dimensions.get('window').height;
 
 const DrawerConfig = {
-    drawerWidth: WIDTH*0.75,
-    // contentComponent: ({ navigation }) => {
-    // return(<MenuDrawer navigation={navigation} />)
-    // }
+    drawerWidth: WIDTH*0.8,
+    drawerPosition: 'right',
+    contentComponent: ({ navigation }) => {
+    return(<Drawer navigation={navigation} />)
+    }
 }
 
 const DrawerNavigator = createDrawerNavigator(

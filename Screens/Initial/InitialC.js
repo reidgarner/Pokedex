@@ -10,8 +10,17 @@ export default class InitialC extends Component {
   };
 
   render() {
+    const { navigation } = this.props;
+    const { navigate } = navigation;
+
+    const onHome = () => {
+      navigate('HomeC');
+    };
+
     return (
-      <InitialV/>
+      <InitialV
+        onHome={onHome}
+      />
     );
   }
 }

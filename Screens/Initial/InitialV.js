@@ -10,19 +10,26 @@ import {
 } from 'react-native';
 
 export default function InitialV(props) {
-  const { } = props;
+  const {
+    onHome
+  } = props;
+
   const {
     container,
     buttonBox,
     button,
   } = styles
+
   return (
     <ImageBackground
       style={container}
       source={require('PokedexFrontEnd/assets/pokedex_background.png')}
     >
       <View style={buttonBox}>
-        <Button label="Enter" />
+        <Button
+          label="Enter"
+          onPress={onHome}
+        />
       </View>
     </ImageBackground>
   );
