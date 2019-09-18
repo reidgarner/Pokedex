@@ -4,7 +4,7 @@ import { DrawerActions } from 'react-navigation-drawer';
 import { Image, TouchableOpacity } from 'react-native';
 
 export default function NavLogo(props) {
-  const { navigation } = props; 
+  const { navigation } = props;
 
   const onDrawer = () => {
     navigation.dispatch(DrawerActions.toggleDrawer());
@@ -22,5 +22,5 @@ export default function NavLogo(props) {
 
 NavLogo.propTypes = {
   navigation:
-    PropTypes.shape({ navigate: PropTypes.func.isRequired }).isRequired,
+    PropTypes.shape({ dispatch: PropTypes.func.isRequired }).isRequired,
 };

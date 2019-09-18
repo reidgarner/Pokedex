@@ -1,28 +1,45 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { styles } from 'PokedexFrontEnd/Screens/Home/HomeS'
+import styles from 'PokedexFrontEnd/Screens/Home/HomeS';
 
-import Button from 'PokedexFrontEnd/Components/Button'
+import ListItem from 'PokedexFrontEnd/Components/ListItem';
 
 import {
   View,
-  Text,
   Image,
+  Text,
+  ScrollView,
 } from 'react-native';
 
 export default function HomeV(props) {
-  const { } = props;
   const {
-    container
-  } = styles
+    container,
+    header,
+    scrollContainer,
+  } = styles;
+
+  const { pokemon } = props;
+
+  console.log(pokemon);
+
+  const pokeList = pokemon && pokemon.map((p, i) => (
+    <ListItem
+      species={p.pokemon_species}
+      sprites={p.sprites}
+      image={i + 1}
+    />
+  ));
+
   return (
     <View style={container}>
-      <Image source={require('PokedexFrontEnd/assets/pika.png')} />
+      <Text style={header}>Pokédex</Text>
+      <ScrollView style={scrollContainer}>
+        {pokeList}
+      </ScrollView>
     </View>
   );
 }
 
 HomeV.propTypes = {
-
+  pokemon: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
-

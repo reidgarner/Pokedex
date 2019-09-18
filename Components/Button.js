@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -23,7 +25,7 @@ const styles = StyleSheet.create({
     marginRight: 20,
     marginTop: 15,
     marginBottom: 10,
-  }
+  },
 });
 
 export default function Button(props) {
@@ -41,3 +43,8 @@ export default function Button(props) {
     </TouchableOpacity>
   );
 }
+
+Button.propTypes = {
+  label: PropTypes.string.isRequired,
+  onPress: PropTypes.func.isRequired,
+};

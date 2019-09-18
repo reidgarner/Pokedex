@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { styles } from 'PokedexFrontEnd/Screens/Initial/InitialS'
+import styles from 'PokedexFrontEnd/Screens/Initial/InitialS';
 
-import Button from 'PokedexFrontEnd/Components/Button'
+import Button from 'PokedexFrontEnd/Components/Button';
 
 import {
   View,
@@ -10,15 +10,12 @@ import {
 } from 'react-native';
 
 export default function InitialV(props) {
-  const {
-    onHome
-  } = props;
+  const { onHome } = props;
 
   const {
     container,
     buttonBox,
-    button,
-  } = styles
+  } = styles;
 
   return (
     <ImageBackground
@@ -35,7 +32,4 @@ export default function InitialV(props) {
   );
 }
 
-InitialV.propTypes = {
-
-};
-
+InitialV.propTypes = { onHome: PropTypes.func.isRequired };

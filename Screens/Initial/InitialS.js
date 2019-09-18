@@ -1,9 +1,7 @@
 import { StyleSheet } from 'react-native';
 
-export const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
+const styles = StyleSheet.create({
+  container: { flex: 1 },
   button: {
     backgroundColor: 'white',
     height: 20,
@@ -20,3 +18,5 @@ export const styles = StyleSheet.create({
     bottom: '20%',
   },
 });
+
+export default styles;

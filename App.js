@@ -1,125 +1,59 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import { Animated, Dimensions } from 'react-native';
-import {createAppContainer} from 'react-navigation';
-import {createStackNavigator} from 'react-navigation-stack';
-import {createDrawerNavigator} from 'react-navigation-drawer';
+import { Dimensions, Image } from 'react-native';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
+import { createDrawerNavigator } from 'react-navigation-drawer';
 
-import InitialC from 'PokedexFrontEnd/Screens/Initial/InitialC'
-import HomeC from 'PokedexFrontEnd/Screens/Home/HomeC'
-// import SignUpCred from './Screens/SignUpCredentials'
-// import SignUpInfo from './Screens/SignUpInfo'
-// import Brewery from './Screens/Brewery'
-// import Store from './Screens/Store'
-// import Account from './Screens/Account'
-import Drawer from './Navigation/Drawer'
+import InitialC from 'PokedexFrontEnd/Screens/Initial/InitialC';
+import HomeC from 'PokedexFrontEnd/Screens/Home/HomeC';
+
+import Drawer from './Navigation/Drawer';
 import NavLogo from './Navigation/NavLogo';
 
 
 const StackNavigator = createStackNavigator(
   {
-    InitialC: {screen: InitialC},
-    HomeC: {screen: HomeC},
-    // SignUpCred: {screen: SignUpCred},
-    // SignUpInfo: {screen: SignUpInfo},
-    // Brewery: {screen: Brewery},
+    InitialC: { screen: InitialC },
+    HomeC: { screen: HomeC },
   },
-  // {
-  //   defaultNavigationOptions: ({navigation}) => {
-  //     return {
-  //       headerLeft: ( 
-  //         <MenuButton
-  //         navigation={navigation}
-  //         />
-  //         ),
-  //     }
-  //   },
-  // },
   {
     defaultNavigationOptions: ({ navigation }) => ({
       headerRight: (
         <NavLogo navigation={navigation} />
       ),
       headerStyle: {
-        backgroundColor: 'white',
+        backgroundColor: '#C90B2B',
         borderBottomWidth: 0,
       },
+      headerTitle: (
+        <Image
+          style={{ width: 130, height: 50, position: 'relative', bottom: 5 }}
+          source={require('PokedexFrontEnd/assets/logo.png')}
+        />
+      ),
+      headerBackTitle: null,
       headerTintColor: '#2E6DB4',
       cardStack: { gesturesEnabled: false },
     }),
-    // transitionConfig: () => ({
-    //   transitionSpec: {
-    //     duration: 0,
-    //     timing: Animated.timing,
-    //   },
-    // }),
   },
 );
 
-// const LoginStackNavigator = createStackNavigator(
-  // {
-  //   Login: {screen: Login},
-  //   SignUpCred: {screen: SignUpCred},
-  //   SignUpInfo: {screen: SignUpInfo},
-  //   Brewery: {screen: Brewery},
-  // },
-  // {
-  //   defaultNavigationOptions: ({navigation}) => {
-  //     return {
-  //       headerLeft: ( 
-  //         <MenuButton
-  //         navigation={navigation}
-  //         />
-  //         ),
-  //     }
-  //   },
-  // },
-// );
-
-// const MainStackNavigator = createStackNavigator({
-  //   Brewery: {screen: Brewery},
-  //   Store: {screen: Store},
-  //   Account: {screen: Account},
-  // },
-  // {
-  //   defaultNavigationOptions: ({navigation}) => {
-  //     return {
-  //       headerLeft: ( 
-  //         <MenuButton
-  //         navigation={navigation}
-  //         />
-  //         ),
-  //     }
-  //   },
-  //   transitionConfig : () => ({
-  //     transitionSpec: {
-  //       duration: 0,
-  //       timing: Animated.timing,
-  //     },
-  //   }),
-//   },
-// );
-
 const WIDTH = Dimensions.get('window').width;
-const HEIGHT = Dimensions.get('window').height;
 
 const DrawerConfig = {
-    drawerWidth: WIDTH*0.8,
-    drawerPosition: 'right',
-    contentComponent: ({ navigation }) => {
-    return(<Drawer navigation={navigation} />)
-    }
-}
+  drawerWidth: WIDTH * 0.8,
+  drawerPosition: 'right',
+  contentComponent: ({ navigation }) => (
+    <Drawer navigation={navigation} />
+  ),
+};
 
 const DrawerNavigator = createDrawerNavigator(
-  {
-    Stack: {
-      screen: StackNavigator,
-    },
-  //   MainStack: {
-  //     screen: MainStackNavigator,
-  //   },
-  },
+  { Stack: { screen: StackNavigator } },
   DrawerConfig,
 );
 
-export default App = createAppContainer(DrawerNavigator);
+const App = createAppContainer(DrawerNavigator);
+
+export default App;

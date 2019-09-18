@@ -16,11 +16,12 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* PokedexFrontEndTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* PokedexFrontEndTests.m */; };
 		4DF9057AB52BA69A4F4A88FB /* libPods-PokedexFrontEnd-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D656D1DE5AB865F66C331614 /* libPods-PokedexFrontEnd-tvOS.a */; };
+		5DBDF43F7E904BBF966AA0AF /* Pokemon GB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3479DF113FBC4418904C4890 /* Pokemon GB.ttf */; };
 		6C4C70D5AB3F2D33AEF47251 /* libPods-PokedexFrontEndTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB50BA0ACA431E0498E0DF5F /* libPods-PokedexFrontEndTests.a */; };
+		705CC2C658E14BD688DC3A12 /* PokemonGB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9763C2E663C44F0EB7452BB3 /* PokemonGB.ttf */; };
 		A4D78201D8C7123D6850DE25 /* libPods-PokedexFrontEnd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98ACBC50DF33EFCEF180FC1A /* libPods-PokedexFrontEnd.a */; };
 		BBD48BB7CA06774C30A8D4BE /* libPods-PokedexFrontEnd-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5C210E3DD9EC3163744AB8 /* libPods-PokedexFrontEnd-tvOSTests.a */; };
-		5DBDF43F7E904BBF966AA0AF /* Pokemon GB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3479DF113FBC4418904C4890 /* Pokemon GB.ttf */; };
-		705CC2C658E14BD688DC3A12 /* PokemonGB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9763C2E663C44F0EB7452BB3 /* PokemonGB.ttf */; };
+		857C098A82C44E58A35A0390 /* truenobd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9F566603CEB04027B7F5B5E4 /* truenobd.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +57,9 @@
 		2C4D4F1CEDDE24487EB24531 /* Pods-PokedexFrontEnd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokedexFrontEnd.release.xcconfig"; path = "Target Support Files/Pods-PokedexFrontEnd/Pods-PokedexFrontEnd.release.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* PokedexFrontEnd-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PokedexFrontEnd-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* PokedexFrontEnd-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PokedexFrontEnd-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3479DF113FBC4418904C4890 /* Pokemon GB.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Pokemon GB.ttf"; path = "../assets/fonts/Pokemon GB.ttf"; sourceTree = "<group>"; };
 		45482E4077476C8C417B562C /* Pods-PokedexFrontEnd-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokedexFrontEnd-tvOS.release.xcconfig"; path = "Target Support Files/Pods-PokedexFrontEnd-tvOS/Pods-PokedexFrontEnd-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		9763C2E663C44F0EB7452BB3 /* PokemonGB.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = PokemonGB.ttf; path = ../assets/fonts/PokemonGB.ttf; sourceTree = "<group>"; };
 		98ACBC50DF33EFCEF180FC1A /* libPods-PokedexFrontEnd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PokedexFrontEnd.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5C210E3DD9EC3163744AB8 /* libPods-PokedexFrontEnd-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PokedexFrontEnd-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA7698A411FB90C7F081E6D /* Pods-PokedexFrontEndTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokedexFrontEndTests.debug.xcconfig"; path = "Target Support Files/Pods-PokedexFrontEndTests/Pods-PokedexFrontEndTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,8 +71,7 @@
 		EAE05E7B638C3C4E522B4AF0 /* Pods-PokedexFrontEnd-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokedexFrontEnd-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-PokedexFrontEnd-tvOS/Pods-PokedexFrontEnd-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		3479DF113FBC4418904C4890 /* Pokemon GB.ttf */ = {isa = PBXFileReference; name = "Pokemon GB.ttf"; path = "../assets/fonts/Pokemon GB.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9763C2E663C44F0EB7452BB3 /* PokemonGB.ttf */ = {isa = PBXFileReference; name = "PokemonGB.ttf"; path = "../assets/fonts/PokemonGB.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9F566603CEB04027B7F5B5E4 /* truenobd.otf */ = {isa = PBXFileReference; name = "truenobd.otf"; path = "../assets/fonts/truenobd.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,14 +204,14 @@
 			sourceTree = "<group>";
 		};
 		D7CB3FA6E2CD41219E196170 /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
 				3479DF113FBC4418904C4890 /* Pokemon GB.ttf */,
 				9763C2E663C44F0EB7452BB3 /* PokemonGB.ttf */,
+				9F566603CEB04027B7F5B5E4 /* truenobd.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -303,7 +305,11 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = G967PJ3NFF;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = G967PJ3NFF;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -328,8 +334,6 @@
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* PokedexFrontEnd */,
@@ -339,16 +343,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		5ABE018C2322D50A00AD71A3 /* libRNGestureHandler-tvOS.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libRNGestureHandler-tvOS.a";
-			remoteRef = 5ABE018B2322D50A00AD71A3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00E356EC1AD99517003FC87E /* Resources */ = {
@@ -366,6 +360,7 @@
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				5DBDF43F7E904BBF966AA0AF /* Pokemon GB.ttf in Resources */,
 				705CC2C658E14BD688DC3A12 /* PokemonGB.ttf in Resources */,
+				857C098A82C44E58A35A0390 /* truenobd.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,10 +606,12 @@
 			baseConfigurationReference = 9AA7698A411FB90C7F081E6D /* Pods-PokedexFrontEndTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = G967PJ3NFF;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = PokedexFrontEndTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -626,9 +623,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokedexFrontEnd.app/PokedexFrontEnd";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-				);
 			};
 			name = Debug;
 		};
@@ -638,6 +632,8 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = G967PJ3NFF;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = PokedexFrontEndTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -649,9 +645,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokedexFrontEnd.app/PokedexFrontEnd";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-				);
 			};
 			name = Release;
 		};
@@ -662,6 +655,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = G967PJ3NFF;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = PokedexFrontEnd/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -672,9 +667,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = PokedexFrontEnd;
 				VERSIONING_SYSTEM = "apple-generic";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-				);
 			};
 			name = Debug;
 		};
@@ -684,6 +676,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G967PJ3NFF;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = PokedexFrontEnd/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -694,9 +688,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = PokedexFrontEnd;
 				VERSIONING_SYSTEM = "apple-generic";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-				);
 			};
 			name = Release;
 		};
@@ -713,6 +704,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "PokedexFrontEnd-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -725,9 +717,6 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-				);
 			};
 			name = Debug;
 		};
@@ -744,6 +733,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "PokedexFrontEnd-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -756,9 +746,6 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-				);
 			};
 			name = Release;
 		};
@@ -774,6 +761,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "PokedexFrontEnd-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -786,9 +774,6 @@
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokedexFrontEnd-tvOS.app/PokedexFrontEnd-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-				);
 			};
 			name = Debug;
 		};
@@ -804,6 +789,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "PokedexFrontEnd-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -816,9 +802,6 @@
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokedexFrontEnd-tvOS.app/PokedexFrontEnd-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-				);
 			};
 			name = Release;
 		};

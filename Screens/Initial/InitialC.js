@@ -25,3 +25,9 @@ export default class InitialC extends Component {
   }
 }
 
+InitialC.propTypes = (
+  {
+    navigation:
+      PropTypes.shape({ navigate: PropTypes.func.isRequired }).isRequired,
+  }
+);
