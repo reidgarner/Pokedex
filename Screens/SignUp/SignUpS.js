@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     position: 'absolute',
     bottom: '26%',
+    left: '5%',
   },
 });
 

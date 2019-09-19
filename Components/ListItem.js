@@ -5,7 +5,7 @@ import { StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native';
 
 const styles = StyleSheet.create({
   listItem: {
-    backgroundColor: 'white',
+    backgroundColor: 'whitesmoke',
     height: 90,
     width: '100%',
     marginBottom: 10,
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     lineHeight: 25,
   },
   image: {
-    height: 100,
+    height: 80,
     width: 100,
   },
 });
@@ -52,6 +52,8 @@ export default function ListItem(props) {
         </View>
         <Image
           style={styles.image}
+          resizeMethod="scale"
+          defaultSource={require('PokedexFrontEnd/assets/loadingPokeball.png')}
           source={{ uri: picture }}
         />
       </TouchableOpacity>

@@ -18,6 +18,7 @@ export default class PokedexC extends Component {
       });
   }
 
+
   render() {
     const { pokemon } = this.state;
 
