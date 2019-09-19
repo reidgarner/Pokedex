@@ -3,14 +3,19 @@ import PropTypes from 'prop-types';
 import styles from 'PokedexFrontEnd/Screens/Initial/InitialS';
 
 import Button from 'PokedexFrontEnd/Components/Button';
+import Input from 'PokedexFrontEnd/Components/Input';
 
 import {
   View,
   ImageBackground,
+  StatusBar,
 } from 'react-native';
 
 export default function InitialV(props) {
-  const { onHome } = props;
+  const {
+    onSignIn,
+    onSignUp,
+  } = props;
 
   const {
     container,
@@ -22,14 +27,22 @@ export default function InitialV(props) {
       style={container}
       source={require('PokedexFrontEnd/assets/pokedex_background.png')}
     >
+      <StatusBar barStyle="light-content" />
       <View style={buttonBox}>
         <Button
-          label="Enter"
-          onPress={onHome}
+          label="Sign In"
+          onPress={onSignIn}
+        />
+        <Button
+          label="Sign Up"
+          onPress={onSignUp}
         />
       </View>
     </ImageBackground>
   );
 }
 
-InitialV.propTypes = { onHome: PropTypes.func.isRequired };
+InitialV.propTypes = {
+  onSignIn: PropTypes.func.isRequired,
+  onSignUp: PropTypes.func.isRequired,
+};

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import InitialV from 'PokedexFrontEnd/Screens/Initial/InitialV';
+import SignUpV from 'PokedexFrontEnd/Screens/SignUp/SignUpV';
 
-export default class InitialC extends Component {
+export default class SignUpC extends Component {
   static navigationOptions = {
     header: null,
     headerBackTitle: null,
@@ -13,23 +13,19 @@ export default class InitialC extends Component {
     const { navigation } = this.props;
     const { navigate } = navigation;
 
-    const onSignIn = () => {
-      navigate('SignInC');
-    };
-    const onSignUp = () => {
-      navigate('SignUpC');
+    const onPokedex = () => {
+      navigate('PokedexC');
     };
 
     return (
-      <InitialV
-        onSignIn={onSignIn}
-        onSignUp={onSignUp}
+      <SignUpV
+        onPokedex={onPokedex}
       />
     );
   }
 }
 
-InitialC.propTypes = (
+SignUpC.propTypes = (
   {
     navigation:
       PropTypes.shape({ navigate: PropTypes.func.isRequired }).isRequired,

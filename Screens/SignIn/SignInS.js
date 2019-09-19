@@ -9,13 +9,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  buttonBox: {
+  signInContainer: {
     width: '100%',
-    height: '16%',
+    height: '25%',
     justifyContent: 'space-between',
     alignItems: 'center',
     position: 'absolute',
-    bottom: '17%',
+    bottom: '30%',
   },
 });
 

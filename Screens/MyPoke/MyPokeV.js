@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from 'PokedexFrontEnd/Screens/Home/HomeS';
+import styles from 'PokedexFrontEnd/Screens/MyPoke/MyPokeS';
 
 import ListItem from 'PokedexFrontEnd/Components/ListItem';
 
@@ -9,9 +9,10 @@ import {
   Image,
   Text,
   ScrollView,
+  StatusBar,
 } from 'react-native';
 
-export default function HomeV(props) {
+export default function MyPokeV(props) {
   const {
     container,
     header,
@@ -32,14 +33,15 @@ export default function HomeV(props) {
 
   return (
     <View style={container}>
+      <StatusBar barStyle="light-content" />
       <Text style={header}>Pokédex</Text>
       <ScrollView style={scrollContainer}>
-        {pokeList}
+        <Text>MY POKEMON</Text>
       </ScrollView>
     </View>
   );
 }
 
-HomeV.propTypes = {
+MyPokeV.propTypes = {
   pokemon: PropTypes.arrayOf(PropTypes.object).isRequired,
 };

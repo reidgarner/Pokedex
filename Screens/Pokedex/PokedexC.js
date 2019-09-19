@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-import HomeV from 'PokedexFrontEnd/Screens/Home/HomeV';
+import PokedexV from 'PokedexFrontEnd/Screens/Pokedex/PokedexV';
 
 const API_URL = 'http://localhost:3000/pokemon';
 
-export default class HomeC extends Component {
+export default class PokedexC extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -22,7 +22,7 @@ export default class HomeC extends Component {
     const { pokemon } = this.state;
 
     return (
-      <HomeV
+      <PokedexV
         pokemon={pokemon}
       />
     );

@@ -6,7 +6,10 @@ import { createStackNavigator } from 'react-navigation-stack';
 import { createDrawerNavigator } from 'react-navigation-drawer';
 
 import InitialC from 'PokedexFrontEnd/Screens/Initial/InitialC';
-import HomeC from 'PokedexFrontEnd/Screens/Home/HomeC';
+import PokedexC from 'PokedexFrontEnd/Screens/Pokedex/PokedexC';
+import MyPokeC from 'PokedexFrontEnd/Screens/MyPoke/MyPokeC';
+import SignInC from 'PokedexFrontEnd/Screens/SignIn/SignInC';
+import SignUpC from 'PokedexFrontEnd/Screens/SignUp/SignUpC';
 
 import Drawer from './Navigation/Drawer';
 import NavLogo from './Navigation/NavLogo';
@@ -15,7 +18,10 @@ import NavLogo from './Navigation/NavLogo';
 const StackNavigator = createStackNavigator(
   {
     InitialC: { screen: InitialC },
-    HomeC: { screen: HomeC },
+    SignInC: { screen: SignInC },
+    SignUpC: { screen: SignUpC },
+    PokedexC: { screen: PokedexC },
+    MyPokeC: { screen: MyPokeC },
   },
   {
     defaultNavigationOptions: ({ navigation }) => ({
@@ -57,3 +63,5 @@ const DrawerNavigator = createDrawerNavigator(
 const App = createAppContainer(DrawerNavigator);
 
 export default App;
+
+console.disableYellowBox = true;

@@ -76,9 +76,9 @@ export default class Drawer extends React.Component {
         source={require('PokedexFrontEnd/assets/Gameboy.png')}
       >
         <View style={styles.linkContainer}>
-          {this.navLink('Pokédex', 'Pokédex')}
-          {this.navLink('My Pokémon', 'My Pokémon')}
-          {this.navLink('Exit', 'Exit')}
+          {this.navLink('PokedexC', 'Pokédex')}
+          {this.navLink('MyPokeC', 'My Pokémon')}
+          {this.navLink('InitialC', 'Exit')}
         </View>
         <TouchableOpacity style={styles.up} />
         <TouchableOpacity style={styles.down} />
