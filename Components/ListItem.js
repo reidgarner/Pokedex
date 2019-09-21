@@ -65,6 +65,4 @@ ListItem.propTypes = {
   species: PropTypes.arrayOf(PropTypes.object),
 };
 
-ListItem.defaultProps = {
-  species: {},
-};
+ListItem.defaultProps = { species: {} };
