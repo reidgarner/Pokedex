@@ -7,6 +7,7 @@ import {
   View,
   Text,
   TouchableOpacity,
+  Vibration,
 } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -33,12 +34,13 @@ const styles = StyleSheet.create({
     lineHeight: 25,
     position: 'absolute',
     left: '5%',
+    color: '#035838',
   },
   selectedLink: {
     width: '100%',
     height: 80,
     justifyContent: 'center',
-    backgroundColor: 'black',
+    backgroundColor: '#035838',
   },
   selectedText: {
     fontFamily: 'PokemonGB',
@@ -55,9 +57,6 @@ const styles = StyleSheet.create({
     top: 485,
     left: 64,
     backgroundColor: 'transparent',
-    borderStyle: 'solid',
-    borderWidth: 3,
-    borderColor: 'green',
   },
   down: {
     height: 60,
@@ -66,9 +65,14 @@ const styles = StyleSheet.create({
     top: 577,
     left: 64,
     backgroundColor: 'transparent',
-    borderStyle: 'solid',
-    borderWidth: 3,
-    borderColor: 'green',
+  },
+  select: {
+    height: 70,
+    width: 165,
+    position: 'absolute',
+    top: 645,
+    right: 0,
+    backgroundColor: 'transparent',
   },
 });
 
@@ -85,10 +89,6 @@ export default class Drawer extends React.Component {
     const { navigation } = this.props;
     const { navigate } = navigation;
 
-    // const onHighlight = (id) => {
-    //   this.setState({ selected: id });
-    // };
-
     const onUp = () => {
       if (selected > 1) {
         this.setState({ selected: selected - 1 });
@@ -101,38 +101,58 @@ export default class Drawer extends React.Component {
       }
     };
 
+    const navigateTo = () => {
+      if (selected === 1) {
+        navigate('PokedexC');
+      } else if (selected === 2) {
+        navigate('MyPokeC');
+      } else {
+        navigate('InitialC');
+      }
+    };
+
     return (
       <ImageBackground
         style={styles.container}
         source={require('PokedexFrontEnd/assets/Gameboy.png')}
       >
         <View style={styles.linkContainer}>
-          <TouchableOpacity
+          <View
             style={selected === 1 ? styles.selectedLink : styles.screenLinks}
-            onPress={() => onHighlight(1)}
           >
             <Text style={selected === 1 ? styles.selectedText : styles.linkText}>Pokédex</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
+          </View>
+          <View
             style={selected === 2 ? styles.selectedLink : styles.screenLinks}
-            onPress={() => onHighlight(2)}
           >
             <Text style={selected === 2 ? styles.selectedText : styles.linkText}>My Pokémon</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
+          </View>
+          <View
             style={selected === 3 ? styles.selectedLink : styles.screenLinks}
-            onPress={() => onHighlight(3)}
           >
             <Text style={selected === 3 ? styles.selectedText : styles.linkText}>Exit</Text>
-          </TouchableOpacity>
+          </View>
         </View>
         <TouchableOpacity
           style={styles.up}
-          onPress={onUp}
+          onPress={() => {
+            onUp();
+            Vibration.vibrate();
+          }}
         />
         <TouchableOpacity
           style={styles.down}
-          onPress={onDown}
+          onPress={() => {
+            onDown();
+            Vibration.vibrate();
+          }}
+        />
+        <TouchableOpacity
+          style={styles.select}
+          onPress={() => {
+            navigateTo();
+            Vibration.vibrate();
+          }}
         />
       </ImageBackground>
     );

@@ -2,10 +2,22 @@
 
   const pokeName = species.name.charAt(0).toUpperCase() + species.name.slice(1);
 
+  pokemon = [
+    {
+      id: 1,
+      name: "bulbasaur",
+      type: ["grass", "poison"],
+      image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`,
+      base_experience: 64,
+      weight: "69貫",
+    },
+  ]
+
 "pokemon_entries": [
   {
       "entry_number": 1,
       "pokemon_species": {
+
           "name": "bulbasaur",
           "url": "https://pokeapi.co/api/v2/pokemon-species/1/"
       },
