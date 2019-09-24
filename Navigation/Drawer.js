@@ -34,6 +34,20 @@ const styles = StyleSheet.create({
     position: 'absolute',
     left: '5%',
   },
+  selectedLink: {
+    width: '100%',
+    height: 80,
+    justifyContent: 'center',
+    backgroundColor: 'black',
+  },
+  selectedText: {
+    fontFamily: 'PokemonGB',
+    color: '#80932C',
+    fontSize: 16,
+    lineHeight: 25,
+    position: 'absolute',
+    left: '5%',
+  },
   up: {
     height: 60,
     width: 70,
@@ -59,29 +73,67 @@ const styles = StyleSheet.create({
 });
 
 export default class Drawer extends React.Component {
-  navLink(nav, text) {
-    const { navigation } = this.props;
-    const { navigate } = navigation;
-    return (
-      <TouchableOpacity style={styles.screenLinks} onPress={() => navigate(nav)}>
-        <Text style={styles.linkText}>{text}</Text>
-      </TouchableOpacity>
-    );
+  constructor(props) {
+    super(props);
+    this.state = {
+      selected: 1,
+    };
   }
 
   render() {
+    const { selected } = this.state;
+    const { navigation } = this.props;
+    const { navigate } = navigation;
+
+    // const onHighlight = (id) => {
+    //   this.setState({ selected: id });
+    // };
+
+    const onUp = () => {
+      if (selected > 1) {
+        this.setState({ selected: selected - 1 });
+      }
+    };
+
+    const onDown = () => {
+      if (selected < 3) {
+        this.setState({ selected: selected + 1 });
+      }
+    };
+
     return (
       <ImageBackground
         style={styles.container}
         source={require('PokedexFrontEnd/assets/Gameboy.png')}
       >
         <View style={styles.linkContainer}>
-          {this.navLink('PokedexC', 'Pokédex')}
-          {this.navLink('MyPokeC', 'My Pokémon')}
-          {this.navLink('InitialC', 'Exit')}
+          <TouchableOpacity
+            style={selected === 1 ? styles.selectedLink : styles.screenLinks}
+            onPress={() => onHighlight(1)}
+          >
+            <Text style={selected === 1 ? styles.selectedText : styles.linkText}>Pokédex</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={selected === 2 ? styles.selectedLink : styles.screenLinks}
+            onPress={() => onHighlight(2)}
+          >
+            <Text style={selected === 2 ? styles.selectedText : styles.linkText}>My Pokémon</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={selected === 3 ? styles.selectedLink : styles.screenLinks}
+            onPress={() => onHighlight(3)}
+          >
+            <Text style={selected === 3 ? styles.selectedText : styles.linkText}>Exit</Text>
+          </TouchableOpacity>
         </View>
-        <TouchableOpacity style={styles.up} />
-        <TouchableOpacity style={styles.down} />
+        <TouchableOpacity
+          style={styles.up}
+          onPress={onUp}
+        />
+        <TouchableOpacity
+          style={styles.down}
+          onPress={onDown}
+        />
       </ImageBackground>
     );
   }

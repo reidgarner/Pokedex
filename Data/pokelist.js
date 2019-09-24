@@ -1,10 +1,14 @@
+  const picture = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${image}.png`
+
+  const pokeName = species.name.charAt(0).toUpperCase() + species.name.slice(1);
+
 "pokemon_entries": [
   {
       "entry_number": 1,
       "pokemon_species": {
           "name": "bulbasaur",
           "url": "https://pokeapi.co/api/v2/pokemon-species/1/"
-      }
+      },
   },
   {
       "entry_number": 2,
